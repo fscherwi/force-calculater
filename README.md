@@ -5,5 +5,5 @@ A Julia Force Calculater
 Simply run:
 
 ```sh
-julia main.js
+julia main.jl
 ```
