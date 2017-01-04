@@ -7,8 +7,8 @@ yr = 0
 i = 1
 forces = parseint(input("\nHow many forces to calculate: "))
 while i <= forces
-    F = parseint(input("F$i: "))
-    F_degrees = parseint(input("F$i α: "))
+    F = parsefloat(input("F$i: "))
+    F_degrees = parsefloat(input("F$i α: "))
     x = F * cos((pi * F_degrees) / 180)
     y = F * sin((pi * F_degrees) / 180)
     xr = xr + x
@@ -17,5 +17,4 @@ while i <= forces
   end
 r = sqrt((xr * xr) + (yr * yr))
 r_degrees = (atan(yr / xr) * 180) / pi
-println("\nFR:   $r")
-println("FR α: $r_degrees\n")
+println("\nFR:   $r\nFR α: $r_degrees\n")
